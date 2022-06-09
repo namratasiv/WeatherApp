@@ -85,17 +85,22 @@ WSGI_APPLICATION = 'weatherapp.wsgi.application'
 #        'PORT': '5432',
 #    }
 # }
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'weather',
+#        'USER': 'postgres',
+#        'PASSWORD': 'password',
+#        'HOST': 'localhost',
+#        'PORT': '8000',
+#    }
+# }
 DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'weather',
-       'USER': 'postgres',
-       'PASSWORD': 'password',
-       'HOST': 'localhost',
-       'PORT': '8000',
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'weather',
+    }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
