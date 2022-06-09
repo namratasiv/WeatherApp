@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
+heroku = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 pylint = "*"
