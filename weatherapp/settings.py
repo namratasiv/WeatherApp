@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import django_heroku
-import playground, os
+import playground
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-qwg9c*=+1=s_6w91jb)9rk!5++8my$wez4s%%wne)*!p2#(%r)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['mrmapp.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['mrmapp.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -95,6 +96,7 @@ WSGI_APPLICATION = 'weatherapp.wsgi.application'
 #        'PORT': '8000',
 #    }
 # }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
